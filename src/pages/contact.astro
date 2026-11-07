@@ -1,0 +1,28 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import site from '../content/site.json';
+import {contact} from '../lib/contact';
+const base = import.meta.env.BASE_URL;
+---
+<Base title="Talk to the Cyentific team" description="Explore OMNIRES and NSOAR, discuss CTI consultancy, or collaborate with Cyentific on EU and other funded projects.">
+  <section class="page-hero contact-hero"><div class="shell"><span class="eyebrow">START WITH YOUR CHALLENGE</span><h1>Let’s connect<br/><span>the right dots.</span></h1><p>Request an online presentation, discuss a CTI or automation challenge, or shape a project collaboration.</p><p class="enquiry-response-target">{site.engagement.responseTarget}</p><a class="text-link contact-jump" href="#enquiry">Start your enquiry <Icon name="arrow" size={18}/></a></div></section>
+  <section class="section"><div class="shell contact-grid">
+    <div class="contact-enquiry" id="enquiry">
+      <div class="enquiry-fallback" data-enquiry-fallback><h2>Start a conversation.</h2><p>Email us with your question, the workflow you want to improve, or a collaboration idea.</p><a class="button button--dark" href={`mailto:${site.email}`}>Email {site.email} <Icon name="diagonal" size={18}/></a><p class="form-note">Please avoid including sensitive operational details. <a href={`${base}privacy.html`}>Privacy notice</a>.</p></div>
+      <form class="enquiry-form" method="post" action={`${base}contact.html#enquiry`} data-enquiry-form data-endpoint={contact.endpoint} data-recipient={site.email} aria-labelledby="enquiry-heading" hidden>
+        <h2 id="enquiry-heading">Start a conversation.</h2><p class="form-intro">Share your main challenge and the tools involved. We’ll agree the focus and timing of a meeting with you.</p>
+        <fieldset disabled><legend class="sr-only">Your enquiry</legend>
+          <div class="field"><label for="interest">I’m interested in</label><select id="interest" name="interest"><option value="presentation">OMNIRES presentation</option><option value="nsoar">NSOAR presentation</option><option value="cti">CTI consultancy</option><option value="knowledge">Security knowledge engineering</option><option value="automation">Playbooks and automation</option><option value="project-collaboration">Project collaboration</option></select></div>
+          <div class="field"><label for="email">Work email <span>Required</span></label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@company.com" maxlength="180" required/></div>
+          <div class="field"><label for="message">What would you like to explore? <span>Optional</span></label><textarea id="message" name="message" rows="4" maxlength="3000" placeholder="A workflow to improve, a product question, or a funded-project opportunity…"></textarea></div>
+          <button class="button submit-button" type="submit"><span data-submit-label>{contact.endpoint ? 'Send enquiry' : 'Continue by email'}</span><Icon name="arrow" size={18}/></button>
+        </fieldset>
+        <p class="form-note">{contact.endpoint ? 'We use these details to respond to your enquiry.' : 'Prepares an email draft for you to review and send.'} Please avoid including sensitive operational details. <a href={`${base}privacy.html#contact-processing`}>Privacy notice</a>.</p>
+        <div class="form-result" data-email-result hidden><h3>Your enquiry is ready.</h3><p>Open the draft in your email app or copy it and send it to <strong>{site.email}</strong>.</p><textarea data-email-draft readonly aria-label="Your prepared enquiry"></textarea><div class="button-group"><a class="button button--dark" data-open-email href={`mailto:${site.email}`}>Open email draft <Icon name="diagonal" size={15}/></a><button class="button button--secondary" type="button" data-copy-email>Copy enquiry <Icon name="source" size={15}/></button></div></div>
+        <p class="form-feedback" data-form-feedback role="status" aria-live="polite" aria-atomic="true"></p>
+      </form>
+    </div>
+    <div class="contact-copy"><span class="eyebrow">A USEFUL FIRST CONVERSATION</span><h2>Your environment.<br/>Your next step.</h2><p>{site.engagement.description}</p><div class="contact-expectations"><div><h3>Explore our products</h3><p>Explore connected security context with OMNIRES or playbook orchestration with NSOAR. Tell us about your use case and the tools already in place.</p></div><div><h3>Scope a consultancy engagement</h3><p>{site.engagement.nextStep}</p></div><div><h3>Project collaboration</h3><p>EU and other funded projects, applied research, consortium roles and technical partnerships.</p></div></div><div class="direct-contact"><a href={`mailto:${site.email}`}>{site.email}</a></div></div>
+  </div></section>
+</Base>

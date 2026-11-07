@@ -1,0 +1,88 @@
+{
+  "title": [
+    "Your intelligence.",
+    "Made operational."
+  ],
+  "description": "Specialist CTI, knowledge engineering and security automation consultancy. Start with a concrete bottleneck; build a workflow your team can understand, validate and use.",
+  "offerings": [
+    {
+      "id": "cti",
+      "number": "01",
+      "title": "Cyber threat intelligence consultancy",
+      "problem": "Your analysts have the reports and feeds. Turning them into structured, usable intelligence still takes too much manual work.",
+      "approach": "We assess the workflow, define the information model and engineer the agreed pipeline. AI CTI Extractor capabilities can support unstructured-to-structured processing, with validation and analyst review matched to the use case.",
+      "deliverables": [
+        "CTI needs and workflow assessment",
+        "STIX modelling, schemas and validation",
+        "TAXII exchange and connector implementation",
+        "OpenCTI and MISP integration",
+        "AI-assisted extraction and review workflows"
+      ],
+      "cta": "Discuss your CTI workflow"
+    },
+    {
+      "id": "knowledge",
+      "number": "02",
+      "title": "Security knowledge engineering",
+      "problem": "Your data sources describe the same environment in different ways. The important relationships are difficult to query and reuse.",
+      "approach": "We build scoped ontologies and mappings, connect observations to infrastructure and business context, and make the resulting knowledge accessible to queries, rules and AI-assisted analysis.",
+      "deliverables": [
+        "Source and data-quality assessment",
+        "Asset, software and dependency modelling",
+        "RDF / OWL ontologies and semantic mappings",
+        "SHACL validation and SPARQL queries",
+        "Evidence, provenance and AI retrieval design"
+      ],
+      "cta": "Connect your data landscape"
+    },
+    {
+      "id": "automation",
+      "number": "03",
+      "title": "Playbooks, orchestration and integrations",
+      "problem": "Your team knows how to respond, but operational knowledge is hard to execute consistently across disconnected tools.",
+      "approach": "We design interoperable playbooks and integrations, drawing on CACAO and NSOAR capabilities. Each engagement defines the supported actions, approval rules, validation and operational handover.",
+      "deliverables": [
+        "Response workflow and playbook design",
+        "CACAO modelling and validation",
+        "Security tool and API integrations",
+        "Execution policies and approval boundaries",
+        "Testing, documentation and handover"
+      ],
+      "cta": "Scope a response workflow"
+    }
+  ],
+  "process": [
+    {
+      "title": "Find the bottleneck.",
+      "text": "Map the decision or action that needs to improve, the systems involved and the manual work being done today."
+    },
+    {
+      "title": "Agree a deliverable.",
+      "text": "Define a bounded pipeline, knowledge model, integration or workflow, with clear scope and acceptance criteria."
+    },
+    {
+      "title": "Validate and hand over.",
+      "text": "Test against agreed examples, document limitations and give your team the information needed to operate the result."
+    }
+  ],
+  "example": {
+    "label": "ILLUSTRATIVE ENGAGEMENT",
+    "title": "From a threat report to reviewed intelligence.",
+    "description": "An analyst receives reports that must be entered into OpenCTI by hand. A focused CTI engagement could connect report intake, structured extraction and analyst review.",
+    "steps": [
+      {
+        "title": "Agree the input",
+        "text": "Select a report format, a redacted sample and the entities your analysts need to capture."
+      },
+      {
+        "title": "Build the workflow",
+        "text": "Map the information to STIX, validate the output and add a review step before import into OpenCTI."
+      },
+      {
+        "title": "Hand over the result",
+        "text": "Receive the agreed mappings, configured pipeline, sample validation results and operating notes."
+      }
+    ],
+    "acceptance": "Agree acceptance criteria around the sample reports, required fields, validation rules and analyst review before work starts."
+  }
+}

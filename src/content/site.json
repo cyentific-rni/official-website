@@ -1,0 +1,34 @@
+{
+  "name": "Cyentific",
+  "legalName": "CYENTIFIC LTD",
+  "email": "contact@cyentific.eu",
+  "registration": "HE 497009",
+  "address": "Dimou Irodotou 20, Kato Platres, 4815 Limassol, Cyprus",
+  "tagline": "Connected intelligence. Informed action.",
+  "primaryCta": "Request a presentation",
+  "navigation": [
+    {
+      "label": "OMNIRES",
+      "href": "omnires.html"
+    },
+    {
+      "label": "NSOAR",
+      "href": "nsoar.html"
+    },
+    {
+      "label": "Services",
+      "href": "services.html"
+    },
+    {
+      "label": "Company",
+      "href": "company.html"
+    }
+  ],
+  "publicUrl": "https://cyentific.eu/",
+  "engagement": {
+    "title": "Bring a challenge. Let’s explore it together.",
+    "description": "Tell us what your team is trying to achieve. We can arrange an online meeting to discuss your use case and present the relevant capabilities, with the agenda and date agreed together.",
+    "responseTarget": "We aim to respond to enquiries within two business days. We’ll agree a suitable meeting date with you.",
+    "nextStep": "If hands-on work is useful, we agree the scope, deliverables, acceptance criteria and price for a workshop, evaluation or pilot before starting."
+  }
+}

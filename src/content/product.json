@@ -1,0 +1,53 @@
+{
+  "eyebrow": "OMNIRES / THE CONNECTED DECISION & ACTION LAYER",
+  "title": [
+    "Understand the environment.",
+    "Choose the next move."
+  ],
+  "description": "Connect asset, software and vulnerability information in a shared knowledge layer. OMNIRES brings security data into context so your team can explore relationships and ask better questions about its environment.",
+  "fabricTitle": "A shared language for your security context.",
+  "fabricDescription": "OMNIRES Fabric gives security data a shared meaning. Ontologies describe assets, software, observations and their relationships, making connected information easier to query and understand.",
+  "architecture": [
+    {
+      "title": "Connect asset and software information",
+      "text": "Bring asset records, software components and vulnerability information together. Dependency-Track integration adds SBOM and component context to your security picture."
+    },
+    {
+      "title": "Make relationships explicit",
+      "text": "Use a shared knowledge model to connect observations with the assets and software they describe. Preserve context across information that would otherwise sit in separate systems."
+    },
+    {
+      "title": "Ask questions across your data",
+      "text": "Query connected facts and policies to investigate your environment. Give analysts a structured foundation for exploring security questions."
+    },
+    {
+      "title": "Build around your use case",
+      "text": "Work with our specialists to identify relevant sources, define a focused knowledge model and connect the information your team needs."
+    }
+  ],
+  "scopeTags": [
+    "Assets",
+    "Software",
+    "Vulnerabilities",
+    "Policies",
+    "Relationships"
+  ],
+  "faq": [
+    {
+      "question": "How can we explore OMNIRES?",
+      "answer": "OMNIRES is in development. Request an online presentation to explore the approach and discuss your use case with our team. We can then agree a focused evaluation or a related knowledge-engineering engagement."
+    },
+    {
+      "question": "How does OMNIRES work with our existing data?",
+      "answer": "We start with your sources and the questions your team needs to answer. Asset and software information, including Dependency-Track data, can form the starting point for a shared knowledge model."
+    },
+    {
+      "question": "Can we start with one use case?",
+      "answer": "Yes. A focused question helps define the relevant data, mappings and expected result. We agree the work around your systems and priorities before starting."
+    },
+    {
+      "question": "Can Cyentific help build our knowledge model?",
+      "answer": "Our knowledge-engineering services cover ontologies, source mappings, data onboarding and queries. We help connect security information with the context your team needs to use it."
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "eyebrow": "NSOAR / INTEROPERABLE SECURITY AUTOMATION",
+  "title": [
+    "Build the playbook.",
+    "Coordinate the response."
+  ],
+  "description": "Build CACAO playbooks visually, drag reusable integration actions into your workflow, and coordinate automated tasks with analyst input. NSOAR connects playbook authoring, execution and monitoring, with Cyentific’s support from integration to handover.",
+  "modules": [
+    {
+      "name": "Architect",
+      "verb": "Design the response.",
+      "text": "Build CACAO playbooks on a visual canvas. Drag integration actions into the workflow, connect the steps and configure the inputs in Architect.",
+      "icon": "graph"
+    },
+    {
+      "name": "Execution",
+      "verb": "Coordinate the workflow.",
+      "text": "Coordinate automated actions and manual steps. Follow execution progress, respond to input requests and review the timeline of each run.",
+      "icon": "action"
+    },
+    {
+      "name": "Exchange",
+      "verb": "Share response knowledge.",
+      "text": "Import and export CACAO and STIX playbook files. Share procedures across teams and bring existing response knowledge into your workflow.",
+      "icon": "network"
+    },
+    {
+      "name": "Storage",
+      "verb": "Keep playbooks reusable.",
+      "text": "Search and filter your playbook library, inspect metadata and reuse procedures. Keep execution history available for review.",
+      "icon": "report"
+    }
+  ],
+  "useCases": [
+    {
+      "title": "Intelligence enrichment",
+      "text": "Coordinate the collection of relevant context and bring results into an analyst’s investigation."
+    },
+    {
+      "title": "Repeatable response procedures",
+      "text": "Combine automated actions and analyst input in a defined response procedure, with execution progress and results available for review."
+    },
+    {
+      "title": "Cross-tool orchestration",
+      "text": "Connect capabilities across a heterogeneous security stack through scoped integrations."
+    }
+  ],
+  "faq": [
+    {
+      "question": "How do we get started?",
+      "answer": "We’re preparing the next commercial release of NSOAR. Request an online presentation to discuss your use case and explore the approach with our team, with the agenda and meeting date agreed together."
+    },
+    {
+      "question": "Can we bring our existing procedures?",
+      "answer": "Yes. We can start with a procedure your analysts already use, identify the decisions and tool interactions, and model a focused CACAO playbook together."
+    },
+    {
+      "question": "How does NSOAR connect to our security stack?",
+      "answer": "Architect provides drag-and-drop integration actions from the CACAO Common Registry. We help configure the selected actions, tool connections and permissions around your workflow, and can develop additional API integrations where needed."
+    },
+    {
+      "question": "What does an implementation engagement include?",
+      "answer": "We agree the workflow and environment, configure the playbooks and integrations, test the result with your team, and provide operating notes and handover. Scope and commercial terms are agreed before work starts."
+    },
+    {
+      "question": "Can we explore an integration or OEM collaboration?",
+      "answer": "We welcome collaborations with security platform vendors, MSSPs and research partners. Tell us about the capability you want to add so we can discuss the technical fit and collaboration model."
+    },
+    {
+      "question": "What does the N in NSOAR stand for?",
+      "answer": "The N stands for neuro-symbolic: our direction for combining AI assistance with explicit, machine-readable playbook knowledge. We are developing a CACAO ontology for integration with the next generation of NSOAR."
+    }
+  ],
+  "connections": {
+    "description": "Build on the systems your analysts already use. We help connect detection, intelligence and response around a workflow that matters to your team.",
+    "items": [
+      {
+        "title": "Bring context to an alert",
+        "text": "Connect detection events with threat-intelligence lookups, including workflows with Wazuh and OpenCTI, so analysts can investigate with relevant context."
+      },
+      {
+        "title": "Put your tools into the playbook",
+        "text": "Drag reusable actions from the CACAO Common Registry into your playbook. Connect the steps and configure the inputs for the tools in your workflow."
+      },
+      {
+        "title": "Get a workflow your team can operate",
+        "text": "Work with us on the playbook, selected integrations and action permissions. Test the workflow together and take it forward with documentation and handover."
+      }
+    ]
+  },
+  "registry": {
+    "name": "CACAO Common Registry",
+    "href": "https://github.com/cacao-common-registry/integrations",
+    "linkLabel": "Explore the integration registry",
+    "description": "Reusable CACAO integration actions for visual playbook authoring."
+  }
+}

@@ -1,0 +1,5 @@
+---
+import Base from '../layouts/Base.astro';
+import legal from '../content/legal.json';
+---
+<Base title="Company & legal information" description="Official company details for Cyentific Ltd, website terms, intellectual property and security reporting."><section class="page-hero"><div class="shell"><span class="eyebrow">LEGAL INFORMATION</span><h1>Company details.<br/><span>Clear information.</span></h1><p>Company information, website terms and a direct channel for security reports.</p></div></section><section class="section"><div class="shell"><article class="legal-prose" set:html={legal.body}/></div></section></Base>

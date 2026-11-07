@@ -1,0 +1,14 @@
+---
+import site from '../content/site.json';
+import Icon from './Icon.astro';
+const base=import.meta.env.BASE_URL;
+---
+<footer class="site-footer"><div class="shell">
+  <div class="footer-grid">
+    <div class="footer-about"><a href={base} class="brand" aria-label="Cyentific home"><img src={`${base}assets/logo-display.png`} alt="Cyentific" width="302" height="105" loading="lazy"/></a><p>{site.tagline}<br/>Security context, made operational.</p><a href={`mailto:${site.email}`} class="footer-email">{site.email}<Icon name="diagonal" size={14}/></a></div>
+    <div><h2>Explore</h2><a href={`${base}omnires.html`}>OMNIRES</a><a href={`${base}nsoar.html`}>NSOAR</a><a href={`${base}services.html`}>Services</a></div>
+    <div><h2>Company</h2><a href={`${base}company.html`}>Our direction</a><a href={`${base}contact.html?interest=project-collaboration`}>Project Collaboration</a><a href={`${base}company.html#contributions`}>Open contributions</a></div>
+    <div><h2>Start a conversation</h2><a href={`${base}contact.html?interest=presentation`}>{site.primaryCta}</a><a href={`${base}contact.html?interest=cti`}>Discuss a CTI project</a><a href={`${base}contact.html`}>Contact the team</a></div>
+  </div>
+  <div class="footer-bottom"><p>© {new Date().getFullYear()} {site.name} · Cyprus · {site.registration}</p><div><a href={`${base}privacy.html`}>Privacy</a><a href={`${base}legal.html`}>Legal</a><a href={`${base}sitemap.xml`}>Sitemap</a></div></div>
+</div></footer>

@@ -1,0 +1,67 @@
+{
+  "title": [
+    "Security that understands",
+    "how everything connects."
+  ],
+  "description": "Cyentific brings together cybersecurity research, knowledge engineering and standards-based automation to turn fragmented evidence into informed decisions and controlled action.",
+  "vision": "Security tools should share more than data. They should share meaning: what an asset does, what depends on it, why a threat matters and which response is appropriate.",
+  "goal": "Our goal is to shorten the path from finding a security issue to taking a justified course of action. Explicit knowledge models, inspectable evidence and practical limits on automation connect our product work, consultancy and open contributions.",
+  "contributions": [
+    {
+      "label": "OPEN TOOLING / CACAO",
+      "title": "CACAO Roaster",
+      "text": "Create, edit, visualise and validate CACAO security playbooks. Explore the open tooling and its community development.",
+      "href": "https://github.com/opencybersecurityalliance/cacao-roaster",
+      "link": "Explore CACAO Roaster"
+    },
+    {
+      "label": "OASIS / KNOWLEDGE REPRESENTATION",
+      "title": "Threat Actor Context ontology",
+      "text": "The OASIS TAC ontology expresses rich context around threat actors, supporting shared meaning across threat-intelligence systems.",
+      "href": "https://github.com/oasis-open/tac-ontology",
+      "link": "Explore the TAC ontology"
+    },
+    {
+      "label": "OCA / INTELLIGENCE & RESPONSE",
+      "title": "STIX Playbook extensions",
+      "text": "The Playbook object and Course of Action extension connect structured threat intelligence with shareable response knowledge.",
+      "href": "https://github.com/opencybersecurityalliance/stix-extensions/blob/main/contexts/playbook/STIX2.1_COA_Playbook_Extension_v4.asciidoc",
+      "link": "Read the OCA specification"
+    },
+    {
+      "label": "CYENTIFIC GITHUB / MISP",
+      "title": "MISP security-playbook object",
+      "text": "A public workbench for describing, managing and sharing playbooks in MISP, with a link to the authoritative MISP object definition.",
+      "href": "https://github.com/cyentific-rni/misp-security-playbook-object",
+      "link": "Explore the MISP workbench"
+    },
+    {
+      "label": "RESILMESH / X-MESH",
+      "title": "Connected security operations",
+      "text": "Resilmesh presents X-MESH as an open-standards orchestration layer using CACAO, OpenC2 and STIX/TAXII across distributed environments.",
+      "href": "https://resilmesh.eu/resilmesh-technical-webinar/",
+      "link": "Read the Resilmesh reference"
+    },
+    {
+      "label": "OASIS / PLAYBOOK SCHEMAS",
+      "title": "CACAO JSON schemas",
+      "text": "The current OASIS repository for CACAO JSON schemas provides public resources for structured playbook validation.",
+      "href": "https://github.com/oasis-open/cacao-json-schemas",
+      "link": "Explore the OASIS repository"
+    },
+    {
+      "label": "APPLIED RESEARCH / INTEROPERABILITY",
+      "title": "XTRUST-6G",
+      "text": "A public project profile describing work across threat intelligence, orchestration, semantic technologies and standardisation.",
+      "href": "https://xtrust-6g.eu/cyen/",
+      "link": "Read the project profile"
+    },
+    {
+      "label": "APPLIED RESEARCH / CLOUD–EDGE–IOT",
+      "title": "HYPEREDGE-SG",
+      "text": "A public O-CEI profile of semantic reasoning and cybersecurity work for Cloud–Edge–IoT energy infrastructure.",
+      "href": "https://o-cei.eu/cyentific/",
+      "link": "Read the O-CEI profile"
+    }
+  ]
+}

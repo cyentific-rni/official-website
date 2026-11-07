@@ -1,0 +1,17 @@
+---
+import Base from '../layouts/Base.astro';
+import Button from '../components/Button.astro';
+import Workflow from '../components/Workflow.astro';
+import Faq from '../components/Faq.astro';
+import ClosingCta from '../components/ClosingCta.astro';
+import product from '../content/product.json';
+import site from '../content/site.json';
+const base=import.meta.env.BASE_URL;
+---
+<Base title="OMNIRES — Connected security context" description={product.description}>
+  <section class="page-hero"><div class="shell"><span class="eyebrow">{product.eyebrow}</span><h1>{product.title[0]}<br/><span>{product.title[1]}</span></h1><p>{product.description}</p><div class="button-group"><Button href={`${base}contact.html?interest=presentation`} variant="dark">{site.primaryCta}</Button><Button href="#workflow" variant="secondary">Explore the approach</Button></div><p class="product-availability">OMNIRES is in development. Arrange a guided presentation to explore the approach and your use case.</p></div></section>
+  <section class="section soft-section" id="workflow"><div class="shell"><div class="section-heading"><div><span class="eyebrow">FROM DATA TO SECURITY CONTEXT</span><h2>Context changes<br/>the response.</h2></div><p>See how connected information can inform an investigation, a decision and a response.</p></div><Workflow/><div class="workflow-caption"><span><span class="status-square"></span>ILLUSTRATIVE WORKFLOWS</span><p>A conceptual workflow using fictional infrastructure.</p></div></div></section>
+  <section class="section" id="fabric"><div class="shell architecture-grid"><div><span class="eyebrow">OMNIRES FABRIC</span><h2>{product.fabricTitle}</h2><p>{product.fabricDescription}</p><div class="tag-row">{product.scopeTags.map(tag=><span>{tag}</span>)}</div><div class="product-note">Open standards give your data a shared meaning. We design ontologies, mappings and queries around the questions your team needs to answer.</div></div><div class="architecture-list">{product.architecture.map((item,i)=><div><span>0{i+1}</span><article><h3>{item.title}</h3><p>{item.text}</p></article></div>)}</div></div></section>
+  <section class="section"><div class="shell faq-grid"><div><span class="eyebrow">WORKING WITH YOUR ENVIRONMENT</span><h2>Start with a question.<br/>Build the context.</h2><p>Explore the capabilities with us and shape a use case around your systems, priorities and team.</p></div><Faq items={product.faq}/></div></section>
+  <ClosingCta title="Start with your environment." description="Bring your data sources, operational questions and constraints. We’ll explore how connected context can support your next decision."/>
+</Base>

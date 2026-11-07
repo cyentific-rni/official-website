@@ -1,0 +1,31 @@
+{
+  "title": "Privacy notice",
+  "intro": "<p class=\"updated\">Last updated: November 2026</p>",
+  "sections": [
+    {
+      "heading": "Data controller",
+      "body": "<p>CYENTIFIC LTD (HE 497009) is responsible for personal data processed in connection with this website and enquiries addressed to us. Our registered office is Dimou Irodotou 20, Kato Platres, 4815 Limassol, Cyprus. For privacy matters, contact <a href=\"mailto:contact@cyentific.eu\">contact@cyentific.eu</a>.</p>"
+    },
+    {
+      "heading": "Information we process and why",
+      "body": "<p>We process the contact details, professional information and message you provide to respond to enquiries, discuss our offerings and manage potential services or collaboration. Our legal basis is our legitimate interest in relevant business communication (Article 6(1)(f) GDPR), or taking steps at your request before entering into a contract (Article 6(1)(b)), where applicable. We may retain records to meet legal obligations (Article 6(1)(c)).</p><p>Providing enquiry details is voluntary. Without a way to contact you, we may be unable to respond. Please share only information relevant to your request.</p>"
+    },
+    {
+      "heading": "Website and contact form",
+      "id": "contact-processing",
+      "kind": "contact"
+    },
+    {
+      "heading": "Recipients and international processing",
+      "body": "<p>Access is limited to people handling your request and the email, hosting and IT providers needed to support it. Information may also be disclosed where required by law. Providers may process information outside the European Economic Area. Where a transfer is subject to the GDPR, the applicable transfer safeguards must be in place. Contact us for information about the providers and safeguards relevant to your enquiry.</p>"
+    },
+    {
+      "heading": "Retention",
+      "body": "<p>We keep personal data for the time needed to handle your enquiry and any resulting business relationship, taking account of the nature of the correspondence, applicable record-keeping duties and the establishment or defence of legal claims. We delete or anonymise information when it is no longer needed.</p>"
+    },
+    {
+      "heading": "Your rights",
+      "body": "<p>Subject to the conditions in applicable law, you may request access, correction, erasure, restriction or portability of your personal data. You may object to processing based on legitimate interests. Where processing relies on consent, you may withdraw it without affecting the lawfulness of earlier processing. Contact <a href=\"mailto:contact@cyentific.eu\">contact@cyentific.eu</a> to exercise your rights.</p><p>You may lodge a complaint with the <a href=\"https://www.dataprotection.gov.cy/\" target=\"_blank\" rel=\"noopener noreferrer\">Cyprus Commissioner for Personal Data Protection</a> or another competent supervisory authority. We do not use website enquiries for automated decisions that produce legal or similarly significant effects.</p>"
+    }
+  ]
+}

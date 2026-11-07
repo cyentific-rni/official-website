@@ -1,0 +1,11 @@
+---
+import {contact} from '../lib/contact';
+import site from '../content/site.json';
+---
+{contact.endpoint ? (
+  <p>When you submit the enquiry form, your email address, selected topic and message are processed through {contact.providerName} to deliver your enquiry to Cyentific. Read the <a href={contact.providerPrivacyUrl} target="_blank" rel="noopener noreferrer">{contact.providerName} privacy information</a> for details about that provider’s processing.</p>
+) : (
+  <p>The contact form prepares an email draft in your browser. Your enquiry reaches us when you review and send it through your email provider. Preparing or copying a draft does not send your details to Cyentific.</p>
+)}
+<p>You can also email <a href={`mailto:${site.email}`}>{site.email}</a> directly. Your email provider processes messages you send.</p>
+<p>This website does not use advertising cookies or analytics scripts. It is hosted on GitHub Pages, which logs visitors’ IP addresses for security purposes. Read the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub Privacy Statement</a> for information about the hosting provider’s processing.</p>

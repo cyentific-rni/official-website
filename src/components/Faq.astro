@@ -1,0 +1,5 @@
+---
+import home from '../content/home.json';
+const {items=home.faq}=Astro.props;
+---
+<div class="faq-list">{items.map((item:{question:string,answer:string})=><details><summary>{item.question}<span aria-hidden="true"></span></summary><p>{item.answer}</p></details>)}</div>

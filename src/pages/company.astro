@@ -1,0 +1,15 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import Button from '../components/Button.astro';
+import ClosingCta from '../components/ClosingCta.astro';
+import company from '../content/company.json';
+const base=import.meta.env.BASE_URL;
+---
+<Base title="About Cyentific — Expertise & open contributions" description="Explore Cyentific’s vision and public technical work: the TAC ontology, CACAO, STIX Playbook extensions, MISP and Resilmesh X-MESH.">
+  <section class="page-hero"><div class="shell"><span class="eyebrow">ABOUT CYENTIFIC</span><h1>{company.title[0]}<br/><span>{company.title[1]}</span></h1><p>{company.description}</p></div></section>
+  <section class="section"><div class="shell split-grid"><div><span class="eyebrow">OUR VISION &amp; GOAL</span><h2>Build the context.<br/>Make it operational.</h2></div><div><p>{company.vision}</p><p>{company.goal}</p><p>OMNIRES connects the evidence behind a decision. NSOAR structures the response workflow. Our consultancy helps teams make practical progress across threat intelligence, knowledge engineering and security automation.</p></div></div></section>
+  <section class="section soft-section" id="contributions"><div class="shell"><div class="section-heading"><div><span class="eyebrow">WORK YOU CAN EXPLORE</span><h2>Open contributions.<br/>Public references.</h2></div><p>Our team’s experience includes open tooling, standards and applied research. Follow the public references for authorship, project participants and the scope of each contribution.</p></div><div class="contribution-grid">{company.contributions.map(item=><article class="contribution"><span>{item.label}</span><h3>{item.title}</h3><p>{item.text}</p><a class="text-link" href={item.href} target="_blank" rel="noopener noreferrer">{item.link}<Icon name="diagonal" size={16}/></a></article>)}</div></div></section>
+  <section class="section"><div class="shell split-grid"><div><span class="eyebrow">PROJECT COLLABORATION</span><h2>Bring a shared goal.<br/>Build something useful.</h2></div><div><p>We welcome EU and other funded-project opportunities where threat intelligence, semantic technologies, AI and interoperable automation can make a practical contribution.</p><p>Share your concept, the call and the technical role you have in mind. We can explore the fit, responsibilities and outcomes together.</p><Button variant="dark" href={`${base}contact.html?interest=project-collaboration`}>Discuss a project</Button></div></div></section>
+  <ClosingCta/>
+</Base>

@@ -1,0 +1,7 @@
+---
+import Button from './Button.astro';
+import site from '../content/site.json';
+const {title=site.engagement.title, description=site.engagement.description,interest='presentation',primaryLabel=site.primaryCta}=Astro.props;
+const base=import.meta.env.BASE_URL;
+---
+<section class="closing section"><div class="shell closing-inner"><div><span class="eyebrow eyebrow--mint">TURN CONTEXT INTO ACTION</span><h2>{title}</h2><p>{description}</p></div><div class="closing-actions"><Button href={`${base}contact.html?interest=${interest}`}>{primaryLabel}</Button><a href={`${base}contact.html?interest=cti`} class="text-link text-link--light">Discuss a service <span aria-hidden="true">↗</span></a></div></div></section>

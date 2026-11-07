@@ -1,0 +1,24 @@
+---
+import home from '../content/home.json';
+import Icon from './Icon.astro';
+const {compact=false}=Astro.props;
+---
+<div class:list={['workflow',{'workflow--compact':compact}]} data-workflow>
+  <div class="workflow-tabs" aria-label="OMNIRES workflow" data-workflow-tabs>
+    {home.steps.map(step=><a id={`step-${step.id}`} class="workflow-tab" href={`#view-${step.id}`} data-workflow-tab><span class="step-number">{step.number}</span><span><strong>{step.title}</strong><small>{step.text}</small></span><Icon name="chevron" size={15}/></a>)}
+  </div>
+  <div class="workflow-views">
+    <section class="workflow-panel" id="view-connect" aria-labelledby="step-connect">
+      <div class="panel-top"><span>01 / CONNECTED EVIDENCE</span><span class="example-label">ILLUSTRATIVE</span></div><h3>Different sources.<br/>A shared meaning.</h3><div class="source-grid"><div><Icon name="network"/><strong>Asset inventory</strong><small>Systems &amp; ownership</small></div><div><Icon name="shield"/><strong>Security findings</strong><small>Weaknesses &amp; exposure</small></div><div><Icon name="report"/><strong>Threat intelligence</strong><small>Signals &amp; adversaries</small></div><div><Icon name="graph"/><strong>Business context</strong><small>Services &amp; dependencies</small></div></div><div class="knowledge-layer"><span class="layer-dots" aria-hidden="true">∴</span><div><strong>OMNIRES Fabric</strong><small>Explicit relationships. Preserved source context.</small></div><span class="layer-tag">KNOWLEDGE GRAPH</span></div><p class="panel-description">{home.steps[0].detail}</p>
+    </section>
+    <section class="workflow-panel" id="view-understand" aria-labelledby="step-understand">
+      <div class="panel-top"><span>02 / DEPENDENCIES &amp; IMPACT</span><span class="example-label">ILLUSTRATIVE</span></div><h3>A weakness has a context.<br/>And a possible reach.</h3><div class="impact-path"><div><span class="path-dot path-dot--alert"></span><span>Exposed API<small>An internet-facing entry point</small></span><b>01</b></div><div><span class="path-dot"></span><span>Service identity<small>Permissions extend the possible reach</small></span><b>02</b></div><div><span class="path-dot"></span><span>Customer data<small>A connected store of sensitive records</small></span><b>03</b></div><div><span class="path-dot path-dot--mint"></span><span>Customer portal<small>The business service that depends on it</small></span><b>04</b></div></div><p class="panel-description">{home.steps[1].detail}</p>
+    </section>
+    <section class="workflow-panel" id="view-decide" aria-labelledby="step-decide">
+      <div class="panel-top"><span>03 / A REVIEWABLE DECISION</span><span class="example-label">ILLUSTRATIVE</span></div><h3>Why this service?<br/>Why this action?</h3><div class="decision-note"><span class="tiny-label">QUESTION TO INVESTIGATE</span><p>Which response best reduces the exposure without disrupting the customer portal?</p></div><div class="evidence-checks"><div><span class="evidence-badge">CONTEXT</span><p>Exposure, identity permissions and service dependencies</p></div><div><span class="evidence-badge evidence-badge--amber">VERIFY</span><p>Actual reachability and the operational effect of a change</p></div><div><span class="evidence-badge">COMPARE</span><p>A patch, a configuration change or a temporary control</p></div></div><p class="panel-description">{home.steps[2].detail}</p>
+    </section>
+    <section class="workflow-panel" id="view-act" aria-labelledby="step-act">
+      <div class="panel-top"><span>04 / PERMISSION BEFORE EXECUTION</span><span class="example-label">ILLUSTRATIVE</span></div><h3>A recommendation<br/>isn’t a permission.</h3><div class="permission-list"><div><Icon name="report"/><span>Enrich the evidence record<small>Example of a bounded, low-risk operation</small></span><b>Policy check</b></div><div><Icon name="action"/><span>Prepare a response ticket<small>Keep the proposed next step reviewable</small></span><b>Policy check</b></div><div><Icon name="shield"/><span>Change a production control<small>A sensitive action with operational consequences</small></span><b class="requires-review">Approval</b></div></div><div class="permission-note"><Icon name="shield" size={17}/><span>Define action scope, permissions and approval rules before automation.</span></div><p class="panel-description">{home.steps[3].detail}</p>
+    </section>
+  </div>
+</div>

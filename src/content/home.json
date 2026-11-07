@@ -1,0 +1,130 @@
+{
+  "eyebrow": "CYBER INTELLIGENCE, CONNECTED",
+  "headline": [
+    "Know the impact.",
+    "Decide the response."
+  ],
+  "description": "Turn fragmented security data into useful intelligence and repeatable workflows. Explore NSOAR, OMNIRES and specialist consultancy in threat intelligence, knowledge engineering and security automation.",
+  "secondaryCta": "Explore our services",
+  "problems": [
+    {
+      "number": "01",
+      "label": "FRAGMENTED DATA",
+      "title": "Your tools see pieces. You need the picture.",
+      "text": "Findings, identities, assets and intelligence sit in separate systems. Your team is left to reconstruct the connections."
+    },
+    {
+      "number": "02",
+      "label": "HIDDEN DEPENDENCIES",
+      "title": "What else could this finding affect?",
+      "text": "A weakness on one asset can reach an identity, a data store or a critical service. Understanding that path changes the response."
+    },
+    {
+      "number": "03",
+      "label": "DECISIONS WITHOUT CONTEXT",
+      "title": "A score is only the start of a decision.",
+      "text": "Analysts need evidence, response options and clear permissions before a recommendation becomes an action."
+    }
+  ],
+  "steps": [
+    {
+      "id": "connect",
+      "number": "01",
+      "title": "Connect the evidence",
+      "text": "Bring inventory, findings, identities, threat intelligence and business context into a shared model.",
+      "detail": "Bring asset records, software components and security observations into a shared context.",
+      "icon": "network"
+    },
+    {
+      "id": "understand",
+      "number": "02",
+      "title": "Understand the impact",
+      "text": "Use explicit relationships, rules and AI-assisted investigation to trace dependencies and explore the blast radius.",
+      "detail": "Explore how an exposure relates to the systems and services your team needs to protect.",
+      "icon": "graph"
+    },
+    {
+      "id": "decide",
+      "number": "03",
+      "title": "Compare the next moves",
+      "text": "Put possible courses of action beside their supporting evidence, operational context and knowledge gaps.",
+      "detail": "Consider the evidence, operational context and trade-offs behind a response.",
+      "icon": "reason"
+    },
+    {
+      "id": "act",
+      "number": "04",
+      "title": "Act within boundaries",
+      "text": "Define what an agent may do, which low-risk actions can be automated and where a person must approve.",
+      "detail": "Define action permissions and review points around the workflow your team needs.",
+      "icon": "shield"
+    }
+  ],
+  "services": [
+    {
+      "id": "cti",
+      "label": "THREAT INTELLIGENCE",
+      "title": "Make intelligence operational.",
+      "text": "Structure reporting, connect feeds and build CTI workflows that reach the systems your analysts use.",
+      "items": [
+        "STIX / TAXII modelling and exchange",
+        "OpenCTI and MISP integrations",
+        "AI-assisted extraction with analyst review"
+      ],
+      "cta": "Discuss a CTI project",
+      "icon": "report"
+    },
+    {
+      "id": "knowledge",
+      "label": "KNOWLEDGE ENGINEERING",
+      "title": "Give your data shared meaning.",
+      "text": "Model assets, software, identities and service dependencies through practical ontologies and mappings.",
+      "items": [
+        "RDF / OWL knowledge modelling",
+        "SHACL validation and SPARQL queries",
+        "Evidence and AI retrieval design"
+      ],
+      "cta": "Connect your context",
+      "icon": "graph"
+    },
+    {
+      "id": "automation",
+      "label": "PLAYBOOKS & INTEGRATIONS",
+      "title": "Put response knowledge to work.",
+      "text": "Turn operational knowledge into interoperable playbooks, integrations and controlled workflows.",
+      "items": [
+        "CACAO playbook engineering",
+        "NSOAR visual authoring and API integrations",
+        "Action policies and approval boundaries"
+      ],
+      "cta": "Scope an automation workflow",
+      "icon": "action"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Where could we start together?",
+      "answer": "Tell us about one operational challenge and the tools involved. We can arrange an online presentation and discussion, with the agenda and date agreed together. Any subsequent workshop, evaluation or pilot has its scope, deliverables and price agreed in advance."
+    },
+    {
+      "question": "Which offering fits our needs?",
+      "answer": "NSOAR brings playbook authoring, execution and monitoring together. OMNIRES focuses on connected security context. Our consultancy helps with CTI pipelines, knowledge models and integrations. Tell us about your challenge and we can discuss where to start."
+    },
+    {
+      "question": "How can we build on our existing security tools?",
+      "answer": "We start with the systems and data you already use. Together, we identify the useful connections, agree the mappings and integrations, and focus on the questions your current tools leave unanswered."
+    },
+    {
+      "question": "How can AI support our intelligence workflow?",
+      "answer": "We help design AI-assisted extraction and enrichment around structured data, source evidence and analyst review. A focused task gives us a practical way to agree the inputs, expected output and review process with your team."
+    },
+    {
+      "question": "Can we focus on one use case first?",
+      "answer": "Absolutely. A specific use case gives us a practical way to agree success criteria and validate the approach with your data. We can start with intelligence enrichment, dependency modelling or a response workflow, then build on what proves useful."
+    },
+    {
+      "question": "Can we collaborate on a funded project?",
+      "answer": "Yes. We welcome EU and other funded-project collaboration around threat intelligence, semantic technologies, AI and security automation. Share the call, concept and role you have in mind so we can explore a useful technical contribution together."
+    }
+  ]
+}

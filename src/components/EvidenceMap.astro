@@ -1,0 +1,25 @@
+---
+import Icon from './Icon.astro';
+const base=import.meta.env.BASE_URL;
+---
+<div class="evidence-map" aria-label="Illustrative connected security context">
+  <div class="map-top"><span class="map-brand"><svg class="map-mark" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" stroke-width=".9"/><ellipse cx="12" cy="12" rx="4.1" ry="5.4" stroke-width="1.5"/></svg> OMNIRES</span><span class="map-concept"><span></span>CONCEPTUAL ARCHITECTURE</span></div>
+  <div class="map-heading"><span>ONE FINDING. A WIDER PICTURE.</span><p>What could this exposure affect?</p></div>
+  <svg class="map-canvas" viewBox="0 0 560 310" role="img" aria-labelledby="map-title map-description"><title id="map-title">An exposed API and its dependencies</title><desc id="map-description">An illustrative threat report connects to a customer API, service identity, customer records and the customer portal. The highlighted path demonstrates a possible blast radius, not a live assessment.</desc>
+    <defs><linearGradient id="signal"><stop stop-color="#b4b6fa"/><stop offset="1" stop-color="#9de6ca"/></linearGradient></defs>
+    <path class="map-line" d="M119 65C150 65 167 142 210 142M110 246C162 246 168 158 214 158M286 139C342 139 315 65 373 65M292 151H416M281 170C330 185 331 255 387 255M430 91V125M452 178V227"/>
+    <path class="map-line map-line--active" d="M119 65C150 65 167 142 210 142M286 139C342 139 315 65 373 65M430 91V125M452 178V227"/>
+    <rect class="map-node map-node--signal" x="8" y="36" width="134" height="57" rx="8"/><text x="20" y="54" class="map-type">THREAT REPORT</text><text x="20" y="77" class="map-label">Reported exploit</text>
+    <rect class="map-node" x="9" y="219" width="144" height="57" rx="8"/><text x="24" y="238" class="map-type">ENVIRONMENT</text><text x="24" y="260" class="map-label">Production assets</text>
+    <circle cx="250" cy="151" r="65" fill="none" stroke="#8795dd" stroke-width="1" opacity=".11"/><circle cx="250" cy="151" r="53" fill="#7580ce" opacity=".07"/>
+    <rect class="map-node map-node--primary" x="181" y="119" width="140" height="65" rx="9"/><text x="197" y="141" class="map-type">ASSET</text><text x="197" y="165" class="map-label map-label--primary">Customer API</text>
+    <rect class="map-node" x="352" y="32" width="145" height="59" rx="8"/><text x="369" y="53" class="map-type">IDENTITY</text><text x="369" y="76" class="map-label">Service account</text>
+    <rect class="map-node" x="390" y="125" width="155" height="57" rx="8"/><text x="408" y="145" class="map-type">DATA</text><text x="408" y="167" class="map-label">Customer records</text>
+    <rect class="map-node map-node--service" x="354" y="226" width="175" height="61" rx="8"/><text x="372" y="247" class="map-type">SERVICE</text><text x="372" y="272" class="map-label">Customer portal</text>
+    <text x="141" y="105" class="map-relation">affects</text><text x="326" y="118" class="map-relation">uses</text><text x="463" y="211" class="map-relation">supports</text>
+    <circle class="map-pulse" cx="154" cy="93" r="3" fill="#bdb9fb"/><circle cx="429" cy="108" r="3" fill="#bdb9fb"/><circle class="map-pulse" cx="452" cy="202" r="3" fill="#a4e4ce"/>
+  </svg>
+  <ol class="map-mobile-path" aria-label="Illustrative dependency path"><li><span>Exposed asset</span><strong>Customer API</strong></li><li><span>Connected identity</span><strong>Service account</strong></li><li><span>Data access</span><strong>Customer records</strong></li><li><span>Business service</span><strong>Customer portal</strong></li></ol>
+  <div class="map-insight"><div class="insight-icon"><Icon name="graph" size={19}/></div><div><span>POTENTIAL BLAST RADIUS</span><strong>Follow the service, not just the server.</strong><p>Asset → identity → data → business impact</p></div><a href={`${base}omnires.html#workflow`} aria-label="Explore the connected reasoning workflow"><Icon name="diagonal" size={20}/></a></div>
+  <p class="map-footnote">Illustrative architecture · fictional infrastructure</p>
+</div>

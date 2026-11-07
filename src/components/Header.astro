@@ -1,0 +1,20 @@
+---
+import site from '../content/site.json';
+import Icon from './Icon.astro';
+const base = import.meta.env.BASE_URL;
+const path = Astro.url.pathname;
+const servicePage = path.endsWith('/services.html');
+const interest = path.endsWith('/nsoar.html') ? 'nsoar' : servicePage ? 'cti' : 'presentation';
+const ctaLabel = servicePage ? 'Discuss your challenge' : site.primaryCta;
+---
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header" data-header>
+  <div class="shell header-inner">
+    <a class="brand" href={base} aria-label="Cyentific home"><img src={`${base}assets/logo-display.png`} alt="Cyentific" width="302" height="105" fetchpriority="high"/></a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="navigation" aria-label="Open navigation" data-menu-toggle hidden><Icon name="menu" size={23}/></button>
+    <nav id="navigation" class="navigation" aria-label="Main navigation">
+      {site.navigation.map(item=><a href={`${base}${item.href}`} aria-current={path.endsWith(item.href) ? 'page' : undefined}>{item.label}</a>)}
+      <a class="navigation-cta" href={`${base}contact.html?interest=${interest}`}>{ctaLabel}<Icon name="arrow" size={16}/></a>
+    </nav>
+  </div>
+</header>
