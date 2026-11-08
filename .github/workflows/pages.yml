@@ -17,8 +17,8 @@ jobs:
       contents: read
       pages: read
     env:
-      SITE_URL: https://cyentific.eu
-      SITE_BASE: /
+      SITE_URL: https://cyentific-rni.github.io
+      SITE_BASE: /official-website/
       PUBLIC_CONTACT_ENDPOINT: ${{ vars.PUBLIC_CONTACT_ENDPOINT }}
       CONTACT_PROVIDER_NAME: ${{ vars.CONTACT_PROVIDER_NAME }}
       CONTACT_PROVIDER_PRIVACY_URL: ${{ vars.CONTACT_PROVIDER_PRIVACY_URL }}
