@@ -24,14 +24,14 @@ export function resolveDeployment(env, {requireSite = false} = {}) {
   const preview = env.SITE_PREVIEW === 'true';
   const configuredSite = env.SITE_URL?.trim();
   if (requireSite && !configuredSite) {
-    throw new Error('Set SITE_URL to the intended public HTTPS origin before building. For a local review, use npm run build:preview.');
+    throw new Error('Set SITE_URL to the intended public HTTPS origin before building. For a local review, set SITE_PREVIEW=true and an explicit HTTPS SITE_URL.');
   }
   const site = new URL(configuredSite || 'http://localhost:4173');
   if (!['https:', 'http:'].includes(site.protocol) || site.username || site.password || site.pathname !== '/' || site.search || site.hash) {
     throw new Error('SITE_URL must be an HTTP(S) origin without a path, credentials, query or fragment. Use SITE_BASE for a subdirectory.');
   }
   if (requireSite && !preview && site.protocol !== 'https:') {
-    throw new Error('Production builds require an HTTPS SITE_URL. Use npm run build:preview for local review.');
+    throw new Error('Production builds require an HTTPS SITE_URL. Use SITE_PREVIEW=true for a local review.');
   }
   const base = env.SITE_BASE?.trim() || '/';
   if (!/^\/(?:[A-Za-z0-9_-]+\/)*$/.test(base)) {
